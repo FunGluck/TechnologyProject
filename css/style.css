@@ -255,6 +255,7 @@ hr {
 }
 .imgbub {
     width: 50%;
+    border-radius: 2rem;
 }
 .slider_area .dog_thumb {
     right: 0;
