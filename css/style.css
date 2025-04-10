@@ -596,3 +596,29 @@ footer {
     background-color: #0D0D11;
     padding: 20px;
 }
+.DevelopersTitleArea {
+    display: flex;
+    justify-content: center;
+}
+.DeveloperTitle {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.DevelopersCards {
+    display: flex;
+    justify-content: space-around;
+}
+.nickname {
+    display: flex;
+    justify-content: center;
+    padding: 5px 0 5px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+.occupation {
+    display: flex;
+    justify-content: center;
+}
+.occupation p{
+
+}
