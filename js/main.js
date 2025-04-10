@@ -1,16 +1,11 @@
 const textendsymbol = "|";
 const textMassive = ["Идеальное соотношение формы и цвета,\n" +
-"который понравится каждому и будет изящно выглядеть."];
+"которое понравится каждому и будет изящно выглядеть."];
 const textBlock = document.querySelector(".auto-generated-text");
 let i = 0;
 let currentText = "";
 let text = getRandomSentence();
 let typingComplete = false;
-document.addEventListener("DOMContentLoaded", function () {
-    document.querySelectorAll("textarea").forEach(textarea => {
-        textarea.value = textarea.value.trim();
-    });
-});
 
 // Функция для получения случайного предложения
 function getRandomSentence() {
@@ -44,4 +39,9 @@ function setCursorBlinking() {
     }, 500); // мигание каждые 500 мс
 }
 
-const typingInterval = setInterval(typeText, 70); // задержка 70 мс между символами
+const typingInterval = setInterval(typeText, 70);
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll("textarea").forEach(textarea => {
+        textarea.value = textarea.value.trim();
+    });
+});
