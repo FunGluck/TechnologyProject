@@ -5,6 +5,11 @@ body {
     font-style: normal;
 }
 
+.navbar-brand {
+    background-image: linear-gradient(to right, #ff97ba, #7f2df4);
+    color: transparent;
+    background-clip: text;
+}
 a,
 .button {
     -webkit-transition: 0.3s;
@@ -116,6 +121,7 @@ hr {
     background: #0D0D11;
 }
 .btn-custom {
+    margin-top: 16px;
     background: #fff;
     font-size: 16px;
     font-weight: 500;
@@ -400,12 +406,6 @@ hr {
 .section {
     padding: 60px 20px;
 }
-.card {
-    background: #1d1d5e;
-    border: none;
-    padding: 20px;
-    border-radius: 15px;
-}
 .service_area .single_service .service_content p {
     margin-bottom: 0;
     height: 15vh;
@@ -485,7 +485,8 @@ hr {
 /* line 4, ../../Arafath/CL/january 2020/240. Animal/HTML/scss/_service.scss */
 .service_area {
     padding-top: 200px;
-
+    flex-direction: row;
+    display: flex;
 }
 .service_area__grid {
     display: grid;
@@ -494,7 +495,88 @@ hr {
 .service_area__grid__part {
     max-width: none;
 }
+.input {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    font-size: 1.5em;
+    background: linear-gradient(21deg, #ff97ba, #7f2df4);
+    padding: 3px;
+    display: inline-block;
+    border-radius: 1em;
+}
 
+.input textarea {
+    background-color: rgb(24, 24, 30);
+    color: whitesmoke;
+    width: 100%;
+    height: 100%;
+    min-height: 2.5em; /* Минимальная высота */
+    position: relative;
+    display: inherit;
+    border-radius: inherit;
+    margin: 0;
+    border: none;
+    outline: none;
+    padding: 0.325em;
+    z-index: 1;
+    resize: none; /* Убираем изменение размера */
+    word-wrap: break-word;
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+
+.input textarea:focus + span {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.input span {
+    transform: scale(.993, .94);
+    transition: transform .5s, opacity .25s;
+    opacity: 0;
+    position: absolute;
+    z-index: 0;
+    margin: 15px;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    box-shadow: inset 0 0 0 3px #fff, 0 0 0 4px #fff, 3px -3px 30px #ff97ba, -3px 3px 30px #7f2df4;
+}
+.writetous {
+    width: 100%;
+    height: 30vh;
+}
+.card {
+    padding: 70px 25px 65px 25px;
+    border: 1px solid #ff97ba;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.card:hover {
+    -webkit-box-shadow: 0 16px 35px 0 rgba(0, 0, 2, 0.08);
+    -moz-box-shadow: 0 16px 35px 0 rgba(0, 0, 2, 0.08);
+    box-shadow: 0 16px 35px 0 rgba(0, 0, 2, 0.08);
+    border: 1px solid transparent;
+}
+.label-h {
+    padding-top: 30px;
+    font-size: 24px;
+    font-weight: 400;
+    padding-bottom: 5px;
+}
+.navbar-nav {
+    gap: 2vw;
+}
 @media (max-width: 767px) {
     /* line 4, ../../Arafath/CL/january 2020/240. Animal/HTML/scss/_service.scss */
     .service_area {
